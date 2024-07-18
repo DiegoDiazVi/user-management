@@ -1,0 +1,25 @@
+.add-user-form {
+    width: 20%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-user-name, .add-user-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-user-button {
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+    background-color: #4667fb;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.add-user-button:hover {
+    background-color: #5976f7;
+}

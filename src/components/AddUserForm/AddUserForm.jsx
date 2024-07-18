@@ -28,6 +28,7 @@ function AddUserForm() {
         e.preventDefault()
         dispatch({
             type: 'ADD_USER',
+            id: idUser++,
             name: data.name,
             email: data.email
         })
@@ -47,5 +48,7 @@ function AddUserForm() {
         </form>
     );
 }
+
+let idUser = 4
 
 export default AddUserForm;

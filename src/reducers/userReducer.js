@@ -2,6 +2,7 @@ export function userReducer (users, action) {
     switch (action.type) {
         case 'ADD_USER':{
             const newUsers = [...users, {
+                id: action.id,
                 name: action.name,
                 email: action.email
             }]

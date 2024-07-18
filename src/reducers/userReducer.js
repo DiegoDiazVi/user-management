@@ -7,6 +7,9 @@ export function userReducer (users, action) {
             }]
             return newUsers
         }
+        case 'DELETE_USER':{
+            return users.filter(user => user.id !== action.id)
+        }
         default:
             throw new Error('Accion no conocida')
     }

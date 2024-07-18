@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import './AddUserForm.css'
+import { useContext } from 'react';
+import { userDispatchContext } from '../../context/UsersContext';
 function AddUserForm() {
     const [data, setData] = useState({
         name: '',
         email: ''
     })
+    const dispatch = useContext(userDispatchContext)
 
     const handlerChangeName = (e) => {
         let name = e.target.value
@@ -23,7 +26,11 @@ function AddUserForm() {
 
     const handlerSubmit = (e) => {
         e.preventDefault()
-        console.log(data)
+        dispatch({
+            type: 'ADD_USER',
+            name: data.name,
+            email: data.email
+        })
     }
 
     return (

@@ -1,0 +1,13 @@
+.user-list {
+    margin: 0;
+    padding: 0;
+}
+
+.user-list-header {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}

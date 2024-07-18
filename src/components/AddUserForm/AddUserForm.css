@@ -23,3 +23,7 @@
 .add-user-button:hover {
     background-color: #5976f7;
 }
+
+label {
+    text-align: center;
+}

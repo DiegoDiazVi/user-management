@@ -1,0 +1,32 @@
+.user-item {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.user-item-button {
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 50%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: #83df21d6;
+}
+.edit:hover {
+    background-color: #60bb00d6;
+}
+
+.delete {
+    background-color: #df3a21d6;
+}
+.delete:hover {
+    background-color: #bb2c00d6;
+}
+

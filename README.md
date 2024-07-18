@@ -1,9 +1,10 @@
-# React + Vite
+# Objetivo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Crear una aplicación de gestión de usuarios que permita agregar, eliminar y actualizar usuarios, utilizando `useContext` y `useReducer` para manejar el estado global de la aplicación.
 
-Currently, two official plugins are available:
+## Instrucciones
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# user-management
+1. [x] Inicializa una aplicación de React si aún no tienes un proyecto configurado.
+2. [] Crea un contexto (`UserContext`) para manejar el estado global de los usuarios.
+3. [] Implementa un reducer para manejar las acciones de agregar, eliminar y actualizar usuarios.
+4. [] Crea los componentes necesarios: `UserProvider`, `UserList`, `UserItem`, `AddUserForm`, y `UpdateUserForm`.
